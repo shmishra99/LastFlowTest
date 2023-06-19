@@ -50,10 +50,10 @@ jobs:
         # reason for closed the issue default value is not_planned 
         close-issue-reason: completed
         
-        # Number of days of inactivity before a stale issue is closed
+        # Number of days of inactivity before a stale issue is closed  //change here 7
         days-before-issue-close: 0
         
-        # Number of days of inactivity before an issue Request becomes stale
+        # Number of days of inactivity before an issue Request becomes stale   //change here 7
         days-before-issue-stale: 0
                 
         #Check for label to stale or close the issue/PR
