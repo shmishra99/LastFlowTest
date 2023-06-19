@@ -1,5 +1,6 @@
 name: 'CSAT survey'
 on:
+  workflow_dispatch: 
   issues:
     types:
       - closed
