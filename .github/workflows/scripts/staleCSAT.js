@@ -12,7 +12,7 @@ const CONSTANT = require('./constant.js');
 module.exports = async ({github, context}) => {
   let date = new Date();
   let totalMilliSeconds = date.getTime();
-  let minutes = 0;  // chnage here 20
+  let minutes = 20;
   let millisecondsToSubtract = minutes * 60 * 1000;
   let closeTime = totalMilliSeconds - millisecondsToSubtract;
   let newDate = new Date(closeTime);
