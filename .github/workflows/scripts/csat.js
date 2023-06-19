@@ -26,19 +26,13 @@ module.exports = async ({github, context}) => {
       else
         baseUrl = CONSTANT_VALUES.MODULE.CSAT.BASE_URL;
     
-      const yesCsat = document.createElement("a");
-      yesCsat.textContent = CONSTANT_VALUES.MODULE.CSAT.YES;
-      yesCsat.href =  baseUrl + CONSTANT_VALUES.MODULE.CSAT.SATISFACTION_PARAM +
-      CONSTANT_VALUES.MODULE.CSAT.YES +
-      CONSTANT_VALUES.MODULE.CSAT.ISSUEID_PARAM + issue
+      const yesCsat = `<a href=${ baseUrl + CONSTANT_VALUES.MODULE.CSAT.SATISFACTION_PARAM +
+        CONSTANT_VALUES.MODULE.CSAT.YES +
+        CONSTANT_VALUES.MODULE.CSAT.ISSUEID_PARAM + issue}> ${CONSTANT_VALUES.MODULE.CSAT.YES}</a>`
       
-      const noCsat = document.createElement("a");
-      noCsat.textContent = CONSTANT_VALUES.MODULE.CSAT.NO
-      noCsat.href =  baseUrl + CONSTANT_VALUES.MODULE.CSAT.SATISFACTION_PARAM +
-      CONSTANT_VALUES.MODULE.CSAT.NO +
-      CONSTANT_VALUES.MODULE.CSAT.ISSUEID_PARAM + issue
-
-
+        const noCsat = `<a href=${ baseUrl + CONSTANT_VALUES.MODULE.CSAT.SATISFACTION_PARAM +
+            CONSTANT_VALUES.MODULE.CSAT.NO +
+            CONSTANT_VALUES.MODULE.CSAT.ISSUEID_PARAM + issue}> ${CONSTANT_VALUES.MODULE.CSAT.NO}</a>`
 
 
 
